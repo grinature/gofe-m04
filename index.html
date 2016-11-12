@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The GoIT FE Homework 04</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+<div class="wrapper_core">
+    <div class="header_space">
+        <!-- Logo (Fig as BG, Txt), Contacts, the 'Country Menu' -->
+        <header class="header-01">
+            <!-- BG + Text -->
+            <div class="header_logo">
+            </div>
+
+            <div class="header_contacts">
+              <ul class="hdr_contacts">
+                <li><span>Наши контакты:</span></li>
+                <li>+9-098-765-4321</li>
+                <li>+9-0123-456-890</li>
+                <li><a href="mailto:info@asia-holidays.com">info@asia-holidays.com</a></li>
+              </ul>
+            </div>
+
+            <nav class="header_nav">
+                <ul class="menu_country">
+                    <li><a class="flag_india" href="#">Индия</a></li>
+                    <li><a class="flag_nepal" href="#">Непал</a></li>
+                    <li><a class="flag_tibet" href="#">Тибет</a></li>
+                    <li><a class="flag_bhutan" href="#">Бутан</a></li>
+                    <li><a class="flag_srilanka" href="#">Шри-Ланка</a></li>
+                    <li><a class="flag_maldives" href="#">Мальдивы</a></li>
+                </ul>
+            </nav>
+        </header>    <!-- eo header 01 -->
+
+        <!-- the Core Header background -->
+        <header class="header-02">
+            <div class="header_bg"></div>
+        </header>
+
+        <!-- the Horizontal Pop-Up CSS-based menu -->
+        <header class="header-03">
+            <!-- There are 7 horizontal MenuItems
+                where {2, 3, 4} are with Pop-Up sub-Menus
+
+                U+25BC: BLACK DOWN-POINTING TRIANGLE =>
+                &#9662;
+                http://www.amp-what.com/unicode/search/triangle
+
+                HTML escape are &#9660; (Dec)  &#x25bc; (Hex)
+                http://www.charbase.com/25bc-unicode-black-down-pointing-triangle
+
+                &#128317; => a red triangle outlined with black
+                http://www.amp-what.com/unicode/search/triangle
+            -->
+            <ul class="header_menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Путешествие &#9662;</a>
+                    <ul class="hdr_submenu">
+                        <li><a href="#">Путешествие 1</a></li>
+                        <li><a href="#">Путешествие 2</a></li>
+                        <li><a href="#">Путешествие 3</a></li>
+                        <li><a href="#">Путешествие 4</a></li>
+                        <li><a href="#">Путешествие 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Услуги &#9662;</a>
+                    <ul class="hdr_submenu">
+                        <li><a href="#">Услуги 1</a></li>
+                        <li><a href="#">Услуги 2</a></li>
+                        <li><a href="#">Услуги 3</a></li>
+                        <li><a href="#">Услуги 4</a></li>
+                        <li><a href="#">Услуги 5</a></li>
+                        <li><a href="#">Услуги 6</a></li>
+                        <li><a href="#">Услуги 7</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Партнерам &#9662;</a>
+                    <ul class="hdr_submenu">
+                        <li><a href="#">Партнерам 1</a></li>
+                        <li><a href="#">Партнерам 2</a></li>
+                        <li><a href="#">Партнерам 3</a></li>
+                        <li><a href="#">Партнерам 4</a></li>
+                        <li><a href="#">Партнерам 5</a></li>
+                        <li><a href="#">Партнерам 6</a></li>
+                        <li><a href="#">Партнерам 7</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Отзывы клиентов</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- wapper_center { InfoSpace/L, ContentSpacel/M, NewsSpace/R}
+        * InfoSpace/Left => The Information column
+        * ContentSpacel/Middle => The column for the site's content
+        * NewsSpace/Right => The News column
+    -->
+    <div class="wrapper_center">
+        <aside class="info_space">
+            <nav class="info">
+                <p class="info_cap">Информация</p>
+                <!-- Different kinds of information we can allocate in this column ... -->
+                <!-- One kind of presented information -->
+                <ul id="infosec-01" class="menu_info">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+                <!-- Another kind of presented information -->
+                <ul id="infosec-02" class="menu_info">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+                <!-- Other pssible kinds of presented information -->
+            </nav>
+        </aside>    <!-- eo Information space -->
+
+        <!-- The core site's content goes here ... -->
+        <main class="core_content">
+            <p class="con-01">
+                <!-- Some site's content .. -->
+            </p>
+            <p class="con-01">
+                <!-- Some site's content .. -->
+            </p>
+        </main>
+
+        <aside class="news_space">
+            <nav class="news">
+                <p class="news_cap">Новости</p>
+                <!-- Different kinds of news we can allocate in this column ... -->
+                <!-- Here is the 1st section of news -->
+                <ul id="newssec-01" class="menu_news">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+                <!-- Here is the 2nd section of news -->
+                <ul id="newssec-02" class="menu_news">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </nav>
+        </aside>    <!-- eo news space -->
+    </div>    <!-- eo wrapper_center { InfoSpace/L, ContentSpacel/M, NewsSpace/R} -->
+</div>    <!-- eo wrapper_core -->
+<!--    <footer class="footer" style="float: none; clear: both;">-->
+<footer class="footer">
+    <p class="copyright">
+        Copyright(©) <a href="#">asia-holidays.com.</a> 2010
+    </p>
+</footer>  <!-- eo footer -->
+
+</body>
+</html>

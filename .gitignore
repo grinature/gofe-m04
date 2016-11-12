@@ -1,0 +1,6 @@
+*.psd
+*.tmp
+*.log
+psd/
+MyTestDir/
+00.test/
