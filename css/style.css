@@ -212,7 +212,6 @@ body {
 
 .header_menu {
     position: relative;
-
     width: 967px;    /* 967 = W/1000 - padLeft/28px */
     height: 28px;
     padding-left: 33px;
@@ -254,7 +253,8 @@ body {
 .hdr_submenu {
     display: none;
     position: absolute;
-    top: 29px;
+/*    top: 29px;*/
+    top: 28px;    /* by advice to be precise */
     width: 150px;
 
     background-color: rgba(48, 48, 48, 1.0);
@@ -329,16 +329,12 @@ body {
 }
 
 .menu_info {
+    padding-left: 15px;
+
     font: 14px/2 Tahoma, sans-serif;    /* 14px/24px */
     line-height: 24px;
 
-    text-indent: 15px;
-}
-
-.menu_info > li > a {
     color: rgba(66, 76, 67, 1.0);
-
-    text-decoration: none;
 }
 
 
@@ -376,18 +372,13 @@ body {
 }
 
 .menu_news {
+    padding-left: 15px;
+
     font: 14px/2 Tahoma, sans-serif;    /* 14px/24px */
     line-height: 24px;
 
-    text-indent: 15px;
-}
-
-.menu_news > li > a {
     color: rgba(66, 76, 67, 1.0);
-
-    text-decoration: none;
 }
-
 
 /* the Footer section */
 .copyright {
